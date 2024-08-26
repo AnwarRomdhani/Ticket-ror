@@ -24,7 +24,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/AnwarRomdhani/Ticket-ror.git
+   git clone https://github.com/your-username/Ticket-ror.git
    cd ticket-support
 
 run "bundle install" and "rails db:migrate"
