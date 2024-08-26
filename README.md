@@ -1,24 +1,30 @@
-# README
+# Ticket Support
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+**Ticket Support** is a Ruby on Rails application that allows users to create and manage support tickets. The tickets are then addressed by an admin through a separate admin interface. This project provides a user-friendly front-end for ticket management and integrates with an external admin application.
 
-* Ruby version
+## Features
 
-* System dependencies
+- **User Authentication**: Users can sign up, log in, and manage their support tickets.
+- **Support Tickets**: Users can create, view, and track their support tickets.
+- **Admin Interface**: Managed through a separate application in a different Git repository.
 
-* Configuration
+## Getting Started
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+- Ruby 2.7.5 or later
+- Rails 6.1.7.8 or later
+- PostgreSQL (or your preferred database)
+- Git
 
-* How to run the test suite
+### Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+1. **Clone the Repository**
 
-* Deployment instructions
+   ```bash
+   git clone https://github.com/AnwarRomdhani/Ticket-ror.git
+   cd ticket-support
 
-* ...
+run "bundle install" and "rails db:migrate"
