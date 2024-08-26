@@ -1,0 +1,21 @@
+<h1 class="page-title">Support Tickets</h1>
+
+<div class="tickets-grid">
+  <% @supporttickets.each do |supportticket| %>
+    <div class="ticket-card <%= 'closed-ticket' if supportticket.status == 'closed' %>">
+      <h2 class="ticket-title"><%= supportticket.title %></h2>
+      <p class="ticket-description"><%= supportticket.description %></p>
+      <p class="ticket-status"><strong>Status:</strong> <%= supportticket.status %></p>
+      <p class="ticket-date"><strong>Open Date:</strong> <%= supportticket.created_at.strftime('%B %d, %Y') %></p>
+      
+      <div class="ticket-actions">
+        <%= link_to 'Show', supportticket, class: 'btn btn-show' %>
+        <%= link_to 'Delete', supportticket, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-delete' %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div style="text-align: center;">
+  <%= link_to 'New Support Ticket', new_supportticket_path, class: 'btn btn-new-support-ticket' %>
+</div>

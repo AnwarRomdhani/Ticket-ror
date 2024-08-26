@@ -1,0 +1,136 @@
+/* Page background color */
+body {
+  background-color: #c0c0c1;/* Slight gray background for the page */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Set a base font */
+}
+
+/* Container for page content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page title styling */
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #7b00ff; /* Bright purple color for the header */
+}
+
+/* Grid for tickets */
+.tickets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media(min-width: 768px) {
+  .tickets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 1024px) {
+  .tickets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card style for tickets */
+.ticket-card {
+  background-color: #ffffff; /* White background for the card */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow effect */
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.ticket-card:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff; /* Light blue on hover */
+}
+
+.closed-ticket {
+  background-color: #cccccc; /* Lighter gray background for closed tickets */
+  color: #333; /* Dark text for closed tickets */
+}
+
+.ticket-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7b00ff; /* Bright purple for ticket title */
+}
+
+.ticket-description,
+.ticket-status,
+.ticket-date {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.ticket-actions {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Bright purple background and white text for show button */
+.btn-show {
+  background-color: #7b00ff; /* Bright purple for show button */
+  color: #fff; /* White text color */
+}
+
+.btn-show:hover {
+  background-color: #fff; /* White background on hover */
+  color: #7b00ff; /* Bright purple text color on hover */
+}
+
+/* White background and bright purple text for delete button */
+.btn-delete {
+  background-color: #fff; /* White background for delete button */
+  color: #7b00ff; /* Bright purple text color */
+  border: 2px solid #7b00ff; /* Bright purple border */
+}
+
+.btn-delete:hover {
+  background-color: #7b00ff; /* Bright purple background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Bright purple background and white text for new support ticket button */
+.btn-new-support-ticket {
+  display: inline-block;
+  background-color: #7b00ff; /* Bright purple for new support ticket button */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  margin: 20px auto; /* Center horizontally */
+  border-radius: 5px;
+}
+
+.btn-new-support-ticket:hover {
+  background-color: #fff; /* White background on hover */
+  color: #7b00ff; /* Bright purple text color on hover */
+}
+
+/* No tickets available message */
+.no-tickets {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+}

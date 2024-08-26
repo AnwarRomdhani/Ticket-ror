@@ -1,0 +1,31 @@
+/* Header Styling */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7b00ff; /* Bright purple background for header */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+}
+
+.header-bar .welcome-message {
+  font-size: 1.5em; /* Slightly bigger font size */
+}
+
+.header-bar .header-actions a {
+  color: #fff; /* Plain white text */
+  background: none; /* Remove background color */
+  border: none; /* Remove border */
+  font-size: 1.5em; /* Slightly bigger font size */
+  cursor: pointer;
+  padding: 5px 10px; /* Padding for click area */
+  text-decoration: none; /* Remove text decoration */
+}
+
+.header-bar .header-actions a:hover {
+  text-decoration: underline; /* Underline text on hover */
+}
+
+.header-bar .edit-profile {
+  margin-right: 10px;
+}

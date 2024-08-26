@@ -1,0 +1,195 @@
+/* Page background color */
+body {
+    background-color: #e0e0e0; /* Light gray background for the page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a base font */
+}
+
+/* Container for ticket details */
+.ticket-details {
+    background-color: #ffffff; /* White background for the details box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto; /* Center horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+/* Container for chat responses and response form */
+.responses-container {
+    background-color: #ffffff; /* White background for the responses box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto; /* Center horizontally */
+    max-width: 800px; /* Adjust the max-width as needed */
+}
+
+/* Title within the container */
+.ticket-title, .responses-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    color: #7b00ff; /* Bright purple color */
+}
+
+/* Styling for ticket title, description, and status */
+.ticket-details p {
+    margin-bottom: 10px;
+}
+
+/* Style for action buttons */
+.ticket-actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: none; /* Remove any box shadow */
+    background-clip: padding-box; /* Ensure background does not overlap borders */
+}
+
+.btn-delete {
+    background-color: #ffffff; /* White background for delete button */
+    color: #7b00ff; /* Bright purple text color */
+    border: 2px solid #7b00ff; /* Bright purple border */
+}
+
+.btn-delete:hover {
+    background-color: #7b00ff; /* Bright purple background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+
+.btn-close {
+    background-color: #7b00ff; /* Bright purple background for close button */
+    color: #fff; /* White text color */
+}
+
+.btn-close:hover {
+    background-color: #5a00cc; /* Darker purple on hover */
+}
+
+/* Styling for response messages */
+.response-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row; /* Align responses in a row */
+    width: 100%;
+}
+
+/* Align admin responses to the right and user responses to the left */
+.response-item.admin {
+    justify-content: flex-end; /* Align admin responses to the right */
+}
+
+.response-item.user {
+    justify-content: flex-start; /* Align user responses to the left */
+}
+
+/* Author and content styling for responses */
+.response-author {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between author label and response content */
+}
+
+.response-content {
+    background-color: #f9f9f9; /* Light grey background for responses */
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 70%; /* Adjust width to fit the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Specific adjustments for admin responses */
+.response-item.admin .response-content {
+    background-color: #e1e1e1; /* Light grey background for admin messages */
+    margin-left: 10px; /* Space between the response and the author */
+}
+
+/* Specific adjustments for user responses */
+.response-item.user .response-content {
+    background-color: #f9f9f9; /* Slightly different grey for user messages */
+    margin-right: 10px; /* Space between the response and the author */
+}
+
+/* Form styling */
+.field {
+    margin-top: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    background-color: #7b00ff; /* Bright purple for submit button */
+    color: #fff; /* White text color */
+}
+
+.btn-submit:hover {
+    background-color: #5a00cc; /* Darker purple on hover */
+}
+/* Styling for response messages */
+.response-item {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Align admin responses to the right */
+.response-item.admin {
+    align-items: flex-end; /* Aligns content to the right */
+    text-align: right; /* Ensures text is right-aligned */
+}
+
+.response-item.admin .response-author {
+    margin-left: 10px; /* Margin between content and author name */
+}
+
+/* Align user responses to the left */
+.response-item.user {
+    align-items: flex-start; /* Aligns content to the left */
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+.response-item.user .response-author {
+    margin-right: 10px; /* Margin between content and author name */
+}
+
+/* Ensure the response content and author are placed correctly */
+.response-content {
+    background-color: #f9f9f9; /* Light grey background for responses */
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.response-author {
+    font-weight: bold;
+    margin-top: 5px; /* Margin above author name */
+}
+/* Additional styling for closed ticket message */
+.ticket-closed-message {
+    font-size: 1.1em;
+    color: #ff4d4d; /* Red color to highlight the message */
+    font-weight: bold;
+    margin-top: 20px; /* Space above the message */
+  }
+  

@@ -1,0 +1,71 @@
+<h1 class="ticket-title">Support Ticket Details</h1>
+
+<div class="ticket-details">
+  <p>
+    <strong>Title:</strong>
+    <%= @supportticket.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @supportticket.description %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= @supportticket.status %>
+  </p>
+
+  <p>
+    <strong>Created At:</strong>
+    <%= @supportticket.created_at %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= @supportticket.user.username %>
+  </p>
+</div>
+
+<h2 class="responses-title">Responses</h2>
+<div class="responses-container">
+  <% @supportticket.responses.each do |response| %>
+    <div class="response-item <%= response.user_id == 3 ? 'admin' : 'user' %>">
+      <div class="response-content">
+        <%= response.body %>
+      </div>
+      <div class="response-author">
+        <strong><%= response.user&.username || '' %></strong>
+      </div>
+    </div>
+  <% end %>
+
+  <% if @supportticket.status == 'closed' %>
+    <div class="ticket-closed-info">
+      <p>
+        <strong>Closed At:</strong>
+        <%= @supportticket.closed_date %>
+      </p>
+      <p class="ticket-closed-message">
+        This ticket is closed by an operator.
+      </p>
+    </div>
+  <% else %>
+    <h3 class="add-response-title">Add a Response</h3>
+    <%= form_with model: [@supportticket, @response], url: create_response_supportticket_path(@supportticket), local: true do |form| %>
+      <div class="field">
+        <%= form.label :body %>
+        <%= form.text_area :body, class: 'form-control' %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit 'Add Response', class: 'btn-submit' %>
+      </div>
+    <% end %>
+  <% end %>
+
+</div>
+
+<div class="ticket-actions">
+  <%= link_to 'Back', supporttickets_path, class: 'btn-back' %>
+</div>

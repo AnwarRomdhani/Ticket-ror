@@ -1,0 +1,119 @@
+/* Page background color */
+body {
+    background-color: #f0f0f0; /* Slight gray background for the page */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a base font */
+}
+
+/* Container for login form */
+.login-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px auto; /* Center horizontally */
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+    color: #7b00ff; /* Bright purple color */
+}
+
+/* Form styling */
+.field {
+    margin-bottom: 15px; /* Space between fields */
+}
+
+.field label {
+    display: block; /* Display label as block to ensure proper spacing */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold label text */
+    color: #333; /* Dark text color */
+}
+
+.field input {
+    width: calc(100% - 22px); /* Extend width further to align better */
+    padding: 10px; /* Padding inside input fields */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Error explanation styling */
+#error_explanation {
+    background-color: #fdd; /* Light red background for error messages */
+    border: 1px solid #f00; /* Red border for error messages */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space below error explanation */
+}
+
+#error_explanation h2 {
+    font-size: 1.2em;
+    color: #f00; /* Red color for error heading */
+}
+
+#error_explanation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Remove bullets from list */
+}
+
+#error_explanation li {
+    color: #f00; /* Red color for error messages */
+}
+
+/* Submit button styling */
+.actions {
+    text-align: center; /* Center align the submit button */
+}
+
+.actions input[type="submit"] {
+    background-color: #7b00ff; /* Bright purple background for submit button */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    font-size: 1em; /* Adjust font size */
+}
+
+.actions input[type="submit"]:hover {
+    background-color: #5a00cc; /* Darker purple on hover */
+}
+
+/* Sign up and password reset links */
+.sign-up-reset-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items apart */
+    margin-top: 15px; /* Space above the container */
+}
+
+.sign-up-reset-container a {
+    color: #7b00ff; /* Bright purple color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text */
+}
+
+.sign-up-reset-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Remember me checkbox alignment */
+.field.check-box {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 15px;
+    margin-right: 300px; /* Space between checkbox and next field */
+}
+
+.field.check-box input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}

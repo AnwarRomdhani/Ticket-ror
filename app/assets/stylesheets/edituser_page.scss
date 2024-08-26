@@ -1,0 +1,123 @@
+/* Page background color */
+body {
+    background-color: #e0e0e0; /* Slight gray background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Set a base font */
+  }
+  
+  /* Container for the edit form */
+  .edit-container {
+    background-color: #ffffff; /* White background for the form box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 50px auto; /* Center horizontally */
+    max-width: 500px; /* Adjust the max-width as needed */
+  }
+  
+  /* Title within the container */
+  .edit-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center align the title */
+    color: #7b00ff; /* Bright purple color */
+  }
+  
+  /* Form styling */
+  .field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .field input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px); /* Adjust width to be slightly smaller than the container */
+  }
+  
+  .actions {
+    text-align: center; /* Center align the submit button */
+    margin-top: 20px;
+  }
+  
+  .actions input {
+    background-color: #7b00ff; /* Bright purple background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .actions input:hover {
+    background-color: #5a00cc; /* Darker purple on hover */
+  }
+  
+  /* Cancel account section */
+  .cancel-account {
+    text-align: center; /* Center align the cancel account button */
+    margin-top: 30px;
+  }
+  
+  .cancel-account p {
+    font-size: 1em;
+    color: #333; /* Neutral color for the text */
+  }
+  
+  .cancel-account .cancel-button {
+    background-color: #ff4d4d; /* Red background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .cancel-account .cancel-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+  
+  /* Back link section */
+  .back-link {
+    text-align: center; /* Center align the back link */
+    margin-top: 20px;
+  }
+  
+  .back-link a {
+    color: #7b00ff; /* Bright purple color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styling for "Remember me" checkbox */
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .remember-me input {
+    margin-right: 10px;
+  }
+  
+  .remember-me label {
+    font-weight: bold;
+    color: #333;
+  }
+  
